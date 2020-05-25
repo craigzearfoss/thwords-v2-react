@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap");
+
+:root {
+  --primaryColor: #5fb7ea;
+  --primaryRGBA: rgba(0, 0, 0, 0.3);
+  --mainGrey: #fafafa;
+  --darkGrey: #5f5e5e;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainTransition: all 0.3s ease-in-out;
+  --mainSpacing: 0.3rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  letter-spacing: var(--mainSpacing);
+  text-transform: capitalize;
+}
+.text-main {
+  color: var(--primaryColor);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Open Sans", sans-serif !important;
+  background: var(--mainGrey) !important;
+  color: var(--mainBlack);
+}
+.main-link {
+  padding: 0.5rem 1rem;
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  outline: 2px solid var(--primaryColor);
+  outline-offset: 4px;
+  border: none;
+  transition: var(--mainTransition);
+}
+.main-link:hover {
+  background: var(--darkGrey);
+  text-decoration: none;
+  color: var(--primaryColor);
+  outline-color: var(--darkGrey);
+}
+.cart-icon {
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* 
+====== 
+About
+======
+*/
+.about-section {
+  width: var(--smallWidth);
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+}
+.about-section p {
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+/* 
+====== 
+Error
+======
+*/
+.error-page {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.error-container {
+  text-align: center;
+  text-transform: capitalize;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 
+====== 
+Help
+======
+*/
+.help-section {
+  width: var(--smallWidth);
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+}
+.help-section p {
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+/* 
+====== 
+Home
+======
+*/
+.home-section {
+  width: var(--smallWidth);
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+}
+.home-section p {
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+/* 
+====== 
+Landing
+======
+*/
+.landing-page {
+  display: flex;
+  justify-content: center;
+}
+.landing-container {
+  text-align: center;
+  text-transform: capitalize;
+}
+/* 
+====== 
+Menu
+======
+*/
+.menu-page {
+  display: flex;
+  justify-content: center;
+}
+.menu-container {
+  text-align: center;
+  text-transform: capitalize;
+}
+/* 
+====== 
+Stats
+======
+*/
+.stats-section {
+  width: var(--smallWidth);
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+}
+.stats-section p {
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
