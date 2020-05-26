@@ -16,7 +16,7 @@ export const Help = () => {
               truck whatever kickstarter tumblr succulents heirloom. Actually
               cronut pitchfork kogi. IPhone shabby chic dreamcatcher banh mi
               artisan palo santo. Neutra keytar jianbing kinfolk tacos
-              succulents art party.
+              succulents art party. Z
             </p>
           </div>
           <div className="col-10 mx-auto col-sm-8 col-md-6 my-3r">

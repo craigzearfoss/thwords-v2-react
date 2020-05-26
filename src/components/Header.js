@@ -1,26 +1,24 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
 import styled from "styled-components";
-import { GameConsumer } from "../context/game";
+import { GameContext } from "../context/game";
 
-export default function Navbar() {
+export default function Navbar({ sidebarOpen }) {
+  const { handleSidebar } = React.useContext(GameContext);
+
   return (
-    <GameConsumer>
-      {" "}
-      {(value) => {
-        const { loading, sidebarOpen } = value;
-        return (
-          <NavWrapper>
-            <div className="nav-center">
-              <FaBars className="nav-icon" />
-              <div className="nav-cart">
-                <div>dddd</div>
-              </div>
-            </div>
-          </NavWrapper>
-        );
-      }}
-    </GameConsumer>
+    <NavWrapper>
+      <div className="nav-center">
+        <FaBars className="nav-icon" onClick={handleSidebar} />
+        {sidebarOpen ? (
+          <span>hello</span>
+        ) : (
+          <div className="nav-cart">
+            <div>dddd</div>
+          </div>
+        )}
+      </div>
+    </NavWrapper>
   );
 }
 
